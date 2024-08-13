@@ -1,6 +1,7 @@
 <head>
 
   <!-- Facebook Pixel Code -->
+<!--
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,6 +17,7 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=448844822609775&ev=PageView&noscript=1"
 /></noscript>
+-->
 <!-- End Facebook Pixel Code -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,6 +30,7 @@ src="https://www.facebook.com/tr?id=448844822609775&ev=PageView&noscript=1"
   gtag('config', 'G-EGSBB32YHR', {"debug_mode":true,"allow_google_signals":false,"allow_ad_personalization_signals":false});
 </script>
 
+<!--
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -49,14 +52,18 @@ src="https://www.facebook.com/tr?id=448844822609775&ev=PageView&noscript=1"
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>  
-  
+-->
 </head>
 
 <body>
 <h1>Hello!</h1>
-<button onclick="fbq('track', 'Purchase', {currency: 'USD', value: 30.00}); gtag('event', 'purchase', {'currency':'USD','value':35,'items':[{'item_id':'K456653443','item_name':document.cookie,'quantity':1,'price':10}]});">Purchase</button>
-<button onclick="fbq('track', 'AddToCart', {currency: 'USD', value: 30.00});">Add To Cart</button>
+<!-- <button onclick="fbq('track', 'Purchase', {currency: 'USD', value: 30.00}); "gtag('event', 'purchase', {'currency':'USD','value':35,'items':[{'item_id':'K456653443','item_name':document.cookie,'quantity':1,'price':10}]});">Purchase</button> -->
+
+<button onclick="gtag('event', 'purchase', {'currency':'USD','value':35,'items':[{'item_id':'K456653443','item_name':document.cookie,'quantity':1,'price':10}]});">Purchase</button>
+
+<!-- <button onclick="fbq('track', 'AddToCart', {currency: 'USD', value: 30.00});">Add To Cart</button>
   <script>
     fbq('track', 'PageView');
   </script>
+-->
 </body>
