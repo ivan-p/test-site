@@ -54,7 +54,7 @@ src="https://www.facebook.com/tr?id=448844822609775&ev=PageView&noscript=1"
 
 <body>
 <h1>Hello!</h1>
-<button onclick="fbq('track', 'Purchase', {currency: 'USD', value: 30.00});">Purchase</button>
+<button onclick="fbq('track', 'Purchase', {currency: 'USD', value: 30.00}); gtag('event', 'purchase', {'currency':'USD','value':35,'items':[{'item_id':'K456653443','item_name':'Blue T-Shirt (Unisex)','quantity':1,'price':10}]});">Purchase</button>
 <button onclick="fbq('track', 'AddToCart', {currency: 'USD', value: 30.00});">Add To Cart</button>
   <script>
     fbq('track', 'PageView');
